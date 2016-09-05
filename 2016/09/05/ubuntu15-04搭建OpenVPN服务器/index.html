@@ -62,7 +62,7 @@
 <meta property="og:image" content="http://yoursite.com/2016/09/05/ubuntu15-04搭建OpenVPN服务器/../../../../asset/p49.png">
 <meta property="og:image" content="http://yoursite.com/2016/09/05/ubuntu15-04搭建OpenVPN服务器/../../../../asset/p50.png">
 <meta property="og:image" content="http://yoursite.com/2016/09/05/ubuntu15-04搭建OpenVPN服务器/../../../../asset/p51.png">
-<meta property="og:updated_time" content="2016-09-05T01:38:51.166Z">
+<meta property="og:updated_time" content="2016-09-05T06:14:55.558Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu15.04搭建OpenVPN服务器">
 <meta name="twitter:description" content="&amp;#x516C;&amp;#x53F8;&amp;#x5206;&amp;#x90E8;&amp;#x9700;&amp;#x8981;&amp;#x8FDE;&amp;#x63A5;&amp;#x516C;&amp;#x53F8;&amp;#x5185;&amp;#x90E8;&amp;#x7684;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#xFF0C;&amp;#x4F46;&amp;#x662F;&amp;#x8BE5;&amp;#x670D;&amp;#x52A1;&amp;#x5668;&amp;#x53EA;&amp;#x5141;">
@@ -339,8 +339,7 @@
           
         <p>&#x516C;&#x53F8;&#x5206;&#x90E8;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x516C;&#x53F8;&#x5185;&#x90E8;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4F46;&#x662F;&#x8BE5;&#x670D;&#x52A1;&#x5668;&#x53EA;&#x5141;&#x8BB8;&#x516C;&#x53F8;&#x5185;&#x90E8;&#x7684;&#x7F51;&#x7EDC;&#x8BBF;&#x95EE;&#x3002;</p>
 <p>&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6253;&#x7B97;&#x4F7F;&#x7528;VPN&#x3002;&#x5BF9;&#x4E8E;VPN&#x4EE5;&#x524D;&#x4F7F;&#x7528;&#x6700;&#x591A;&#x7684;&#x662F;PPTP&#x8FD9;&#x4E2A;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x4F46;&#x662F;PPTP&#x76F8;&#x5BF9;&#x4E8E;openvpn&#x6765;&#x8BF4;&#xFF0C;&#x6CA1;&#x6709;openvpn&#x5B89;&#x5168;&#xFF0C;&#x800C;&#x4E14;PPTP&#x5728;linux&#x4E0B;&#x547D;&#x4EE4;&#x884C;&#x652F;&#x6301;&#x4E0D;&#x662F;&#x5F88;&#x597D;&#xFF0C;&#x7A33;&#x5B9A;&#x6027;&#x4E5F;&#x4E0D;&#x5982;openvpn&#x3002;&#x6240;&#x4EE5;&#x6700;&#x540E;&#x5C31;&#x9009;&#x62E9;openvpn&#x6765;&#x642D;&#x5EFA;VPN&#x3002;</p>
-<p>PS&#xFF1A;&#x672C;&#x6587;&#x5728;ubuntu 14.04&#x4E0A;&#x5B89;&#x88C5;&#xFF0C;openvpn&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x4E3A;192.168.1.8&#x3002;</p>
-<p>&#x6709;&#x5173;openvpn&#x5728;centos6.6 64bit&#x7684;&#x914D;&#x7F6E;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x5DF2;&#x7ECF;&#x7ECF;&#x8FC7;&#x9A8C;&#x8BC1;&#x3002;&#x6587;&#x7AE0;&#x540E;&#x6709;centos&#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&#x547D;&#x4EE4;&#x53CA;&#x6B65;&#x9AA4;&#x3002;</p>
+<p>PS&#xFF1A;&#x672C;&#x6587;&#x5728;ubuntu 14.04&#x4E0A;&#x5B89;&#x88C5;&#xFF0C;openvpn&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x4E3A;192.168.1.8&#x3002;<br><a id="more"></a><br>&#x6709;&#x5173;openvpn&#x5728;centos6.6 64bit&#x7684;&#x914D;&#x7F6E;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x5DF2;&#x7ECF;&#x7ECF;&#x8FC7;&#x9A8C;&#x8BC1;&#x3002;&#x6587;&#x7AE0;&#x540E;&#x6709;centos&#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&#x547D;&#x4EE4;&#x53CA;&#x6B65;&#x9AA4;&#x3002;</p>
 <h3 id="&#x4E00;&#x3001;openvpn&#x539F;&#x7406;"><a href="#&#x4E00;&#x3001;openvpn&#x539F;&#x7406;" class="headerlink" title="&#x4E00;&#x3001;openvpn&#x539F;&#x7406;"></a>&#x4E00;&#x3001;openvpn&#x539F;&#x7406;</h3><p>openvpn&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x516C;&#x5F00;&#x5BC6;&#x94A5;&#xFF08;&#x975E;&#x5BF9;&#x79F0;&#x5BC6;&#x94A5;&#xFF0C;&#x52A0;&#x5BC6;&#x89E3;&#x5BC6;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;key&#xFF0C;&#x4E00;&#x4E2A;&#x79F0;&#x4E3A;Publice key&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x662F;Private key&#xFF09;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x7684;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x79F0;&#x4E3A;TLS&#x52A0;&#x5BC6;</p>
 <p>openvpn&#x4F7F;&#x7528;TLS&#x52A0;&#x5BC6;&#x7684;&#x5DE5;&#x4F5C;&#x8FC7;&#x7A0B;&#x662F;&#xFF0C;&#x9996;&#x5148;VPN Sevrver&#x7AEF;&#x548C;VPN Client&#x7AEF;&#x8981;&#x6709;&#x76F8;&#x540C;&#x7684;CA&#x8BC1;&#x4E66;&#xFF0C;&#x53CC;&#x65B9;&#x901A;&#x8FC7;&#x4EA4;&#x6362;&#x8BC1;&#x4E66;&#x9A8C;&#x8BC1;&#x53CC;&#x65B9;&#x7684;&#x5408;&#x6CD5;&#x6027;&#xFF0C;&#x7528;&#x4E8E;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x5EFA;&#x7ACB;VPN&#x8FDE;&#x63A5;&#x3002;</p>
 <p>&#x7136;&#x540E;&#x4F7F;&#x7528;&#x5BF9;&#x65B9;&#x7684;CA&#x8BC1;&#x4E66;&#xFF0C;&#x628A;&#x81EA;&#x5DF1;&#x76EE;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x65B9;&#x6CD5;&#x52A0;&#x5BC6;&#x540E;&#x53D1;&#x9001;&#x7ED9;&#x5BF9;&#x65B9;&#xFF0C;&#x7531;&#x4E8E;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x5BF9;&#x65B9;CA&#x8BC1;&#x4E66;&#x52A0;&#x5BC6;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x6709;&#x5BF9;&#x65B9;CA&#x8BC1;&#x4E66;&#x5BF9;&#x5E94;&#x7684;Private key&#x624D;&#x80FD;&#x89E3;&#x5BC6;&#x8BE5;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4FDD;&#x8BC1;&#x4E86;&#x6B64;&#x5BC6;&#x94A5;&#x7684;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x5E76;&#x4E14;&#x6B64;&#x5BC6;&#x94A5;&#x662F;&#x5B9A;&#x671F;&#x6539;&#x53D8;&#x7684;&#xFF0C;&#x5BF9;&#x4E8E;&#x7A83;&#x542C;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x53EF;&#x80FD;&#x8FD8;&#x6CA1;&#x6709;&#x7834;&#x89E3;&#x51FA;&#x6B64;&#x5BC6;&#x94A5;&#xFF0C;VPN&#x901A;&#x4FE1;&#x53CC;&#x65B9;&#x53EF;&#x80FD;&#x5C31;&#x5DF2;&#x7ECF;&#x66F4;&#x6362;&#x5BC6;&#x94A5;&#x4E86;&#x3002;</p>
@@ -580,7 +579,7 @@
         <p><span>本文标题:</span><a href="/2016/09/05/ubuntu15-04搭建OpenVPN服务器/">ubuntu15.04搭建OpenVPN服务器</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 LXJ 的个人博客">LXJ</a></p>
         <p><span>发布时间:</span>2016年09月05日 - 08时55分</p>
-        <p><span>最后更新:</span>2016年09月05日 - 09时38分</p>
+        <p><span>最后更新:</span>2016年09月05日 - 14时14分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/09/05/ubuntu15-04搭建OpenVPN服务器/" title="ubuntu15.04搭建OpenVPN服务器">http://yoursite.com/2016/09/05/ubuntu15-04搭建OpenVPN服务器/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/09/05/ubuntu15-04搭建OpenVPN服务器/　　作者: LXJ" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -740,7 +739,7 @@
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >海贼到访数: 
+                        <span id="site-visit" >到访数: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>

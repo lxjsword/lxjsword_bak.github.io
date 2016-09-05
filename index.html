@@ -298,7 +298,7 @@
 
       
         <p class="article-more-link">
-          <a  href="/2016/09/05/Windows下利用XX-Net翻墙/#more">大航海 >></a>
+          <a  href="/2016/09/05/Windows下利用XX-Net翻墙/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -344,239 +344,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>&#x516C;&#x53F8;&#x5206;&#x90E8;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x516C;&#x53F8;&#x5185;&#x90E8;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4F46;&#x662F;&#x8BE5;&#x670D;&#x52A1;&#x5668;&#x53EA;&#x5141;&#x8BB8;&#x516C;&#x53F8;&#x5185;&#x90E8;&#x7684;&#x7F51;&#x7EDC;&#x8BBF;&#x95EE;&#x3002;</p>
+              <p>&#x516C;&#x53F8;&#x5206;&#x90E8;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x516C;&#x53F8;&#x5185;&#x90E8;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x4F46;&#x662F;&#x8BE5;&#x670D;&#x52A1;&#x5668;&#x53EA;&#x5141;&#x8BB8;&#x516C;&#x53F8;&#x5185;&#x90E8;&#x7684;&#x7F51;&#x7EDC;&#x8BBF;&#x95EE;&#x3002;</p>
 <p>&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6253;&#x7B97;&#x4F7F;&#x7528;VPN&#x3002;&#x5BF9;&#x4E8E;VPN&#x4EE5;&#x524D;&#x4F7F;&#x7528;&#x6700;&#x591A;&#x7684;&#x662F;PPTP&#x8FD9;&#x4E2A;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x4F46;&#x662F;PPTP&#x76F8;&#x5BF9;&#x4E8E;openvpn&#x6765;&#x8BF4;&#xFF0C;&#x6CA1;&#x6709;openvpn&#x5B89;&#x5168;&#xFF0C;&#x800C;&#x4E14;PPTP&#x5728;linux&#x4E0B;&#x547D;&#x4EE4;&#x884C;&#x652F;&#x6301;&#x4E0D;&#x662F;&#x5F88;&#x597D;&#xFF0C;&#x7A33;&#x5B9A;&#x6027;&#x4E5F;&#x4E0D;&#x5982;openvpn&#x3002;&#x6240;&#x4EE5;&#x6700;&#x540E;&#x5C31;&#x9009;&#x62E9;openvpn&#x6765;&#x642D;&#x5EFA;VPN&#x3002;</p>
-<p>PS&#xFF1A;&#x672C;&#x6587;&#x5728;ubuntu 14.04&#x4E0A;&#x5B89;&#x88C5;&#xFF0C;openvpn&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x4E3A;192.168.1.8&#x3002;</p>
-<p>&#x6709;&#x5173;openvpn&#x5728;centos6.6 64bit&#x7684;&#x914D;&#x7F6E;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x5DF2;&#x7ECF;&#x7ECF;&#x8FC7;&#x9A8C;&#x8BC1;&#x3002;&#x6587;&#x7AE0;&#x540E;&#x6709;centos&#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&#x547D;&#x4EE4;&#x53CA;&#x6B65;&#x9AA4;&#x3002;</p>
-<h3 id="&#x4E00;&#x3001;openvpn&#x539F;&#x7406;"><a href="#&#x4E00;&#x3001;openvpn&#x539F;&#x7406;" class="headerlink" title="&#x4E00;&#x3001;openvpn&#x539F;&#x7406;"></a>&#x4E00;&#x3001;openvpn&#x539F;&#x7406;</h3><p>openvpn&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x516C;&#x5F00;&#x5BC6;&#x94A5;&#xFF08;&#x975E;&#x5BF9;&#x79F0;&#x5BC6;&#x94A5;&#xFF0C;&#x52A0;&#x5BC6;&#x89E3;&#x5BC6;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;key&#xFF0C;&#x4E00;&#x4E2A;&#x79F0;&#x4E3A;Publice key&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x662F;Private key&#xFF09;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x7684;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x79F0;&#x4E3A;TLS&#x52A0;&#x5BC6;</p>
-<p>openvpn&#x4F7F;&#x7528;TLS&#x52A0;&#x5BC6;&#x7684;&#x5DE5;&#x4F5C;&#x8FC7;&#x7A0B;&#x662F;&#xFF0C;&#x9996;&#x5148;VPN Sevrver&#x7AEF;&#x548C;VPN Client&#x7AEF;&#x8981;&#x6709;&#x76F8;&#x540C;&#x7684;CA&#x8BC1;&#x4E66;&#xFF0C;&#x53CC;&#x65B9;&#x901A;&#x8FC7;&#x4EA4;&#x6362;&#x8BC1;&#x4E66;&#x9A8C;&#x8BC1;&#x53CC;&#x65B9;&#x7684;&#x5408;&#x6CD5;&#x6027;&#xFF0C;&#x7528;&#x4E8E;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x5EFA;&#x7ACB;VPN&#x8FDE;&#x63A5;&#x3002;</p>
-<p>&#x7136;&#x540E;&#x4F7F;&#x7528;&#x5BF9;&#x65B9;&#x7684;CA&#x8BC1;&#x4E66;&#xFF0C;&#x628A;&#x81EA;&#x5DF1;&#x76EE;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x65B9;&#x6CD5;&#x52A0;&#x5BC6;&#x540E;&#x53D1;&#x9001;&#x7ED9;&#x5BF9;&#x65B9;&#xFF0C;&#x7531;&#x4E8E;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x5BF9;&#x65B9;CA&#x8BC1;&#x4E66;&#x52A0;&#x5BC6;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x6709;&#x5BF9;&#x65B9;CA&#x8BC1;&#x4E66;&#x5BF9;&#x5E94;&#x7684;Private key&#x624D;&#x80FD;&#x89E3;&#x5BC6;&#x8BE5;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4FDD;&#x8BC1;&#x4E86;&#x6B64;&#x5BC6;&#x94A5;&#x7684;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x5E76;&#x4E14;&#x6B64;&#x5BC6;&#x94A5;&#x662F;&#x5B9A;&#x671F;&#x6539;&#x53D8;&#x7684;&#xFF0C;&#x5BF9;&#x4E8E;&#x7A83;&#x542C;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x53EF;&#x80FD;&#x8FD8;&#x6CA1;&#x6709;&#x7834;&#x89E3;&#x51FA;&#x6B64;&#x5BC6;&#x94A5;&#xFF0C;VPN&#x901A;&#x4FE1;&#x53CC;&#x65B9;&#x53EF;&#x80FD;&#x5C31;&#x5DF2;&#x7ECF;&#x66F4;&#x6362;&#x5BC6;&#x94A5;&#x4E86;&#x3002;</p>
-<h3 id="&#x4E8C;&#x3001;&#x5B89;&#x88C5;openvpn"><a href="#&#x4E8C;&#x3001;&#x5B89;&#x88C5;openvpn" class="headerlink" title="&#x4E8C;&#x3001;&#x5B89;&#x88C5;openvpn"></a>&#x4E8C;&#x3001;&#x5B89;&#x88C5;openvpn</h3><p>openvpn&#x7684;&#x5B89;&#x88C5;&#x6211;&#x4EEC;&#x5206;&#x4E3A;apt-get&#x65B9;&#x5F0F;&#x548C;&#x6E90;&#x7801;&#x65B9;&#x5F0F;&#xFF0C;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x53EA;&#x8BB2;&#x89E3;apt-get&#x65B9;&#x5F0F;&#x7684;&#x5B89;&#x88C5;&#x3002;&#x6709;&#x5173;&#x6E90;&#x7801;&#x65B9;&#x5F0F;&#x5B89;&#x88C5;openvpn&#xFF0C;&#x53EF;&#x81EA;&#x884C;&#x767E;&#x5EA6;&#x3002;</p>
-<p>apt-get&#x65B9;&#x5F0F;&#x5B89;&#x88C5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;<br>sudo apt-get -y install openvpn libssl-dev openssl<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p1.png" alt=""><br>openvpn&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x67E5;&#x770B;openvpn&#x7684;&#x7248;&#x672C;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;<br>openvpn &#x2013;version<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p2.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;openvpn&#x76EE;&#x524D;&#x7684;&#x7248;&#x672C;&#x4E3A;2.3.2&#x3002;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x5EFA;&#x8BAE;&#x8BB0;&#x4F4F;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x518D;&#x6765;&#x67E5;&#x770B;&#x4E0B;openvpn&#x5B89;&#x88C5;&#x65F6;&#x4EA7;&#x751F;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;<br>dpkg -L openvpn |more<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p3.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x660E;&#x663E;&#x7684;&#x770B;&#x51FA;openvpn&#x5DF2;&#x7ECF;&#x6709;&#x76F8;&#x5173;&#x914D;&#x7F6E;&#x7684;&#x6A21;&#x7248;&#x4E86;&#x3002;<br>openvpn&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x6765;&#x5B89;&#x88C5;easy-rsa&#x3002;<br>easy-rsa&#x662F;&#x7528;&#x6765;&#x5236;&#x4F5C;openvpn&#x76F8;&#x5173;&#x8BC1;&#x4E66;&#x7684;&#x3002;<br>&#x5B89;&#x88C5;easy-rsa&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;<br>sudo apt-get -y install easy-rsa<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p4.png" alt=""></p>
-<p>&#x67E5;&#x770B;easy-rsa&#x5B89;&#x88C5;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;<br>dpkg -L easy-rsa |more<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p5.png" alt=""><br>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x660E;&#x663E;&#x7684;&#x770B;&#x5230;easy-rsa&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x5230;/usr/share/easy-rsa/&#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
-<h3 id="&#x4E09;&#x3001;&#x5236;&#x4F5C;&#x76F8;&#x5173;&#x8BC1;&#x4E66;"><a href="#&#x4E09;&#x3001;&#x5236;&#x4F5C;&#x76F8;&#x5173;&#x8BC1;&#x4E66;" class="headerlink" title="&#x4E09;&#x3001;&#x5236;&#x4F5C;&#x76F8;&#x5173;&#x8BC1;&#x4E66;"></a>&#x4E09;&#x3001;&#x5236;&#x4F5C;&#x76F8;&#x5173;&#x8BC1;&#x4E66;</h3><p>&#x6839;&#x636E;&#x7B2C;&#x4E00;&#x7AE0;&#x8282;openvpn&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x77E5;&#x9053;openvpn&#x7684;&#x8BC1;&#x4E66;&#x5206;&#x4E3A;&#x4E09;&#x90E8;&#x5206;&#xFF1A;CA&#x8BC1;&#x4E66;&#x3001;Server&#x7AEF;&#x8BC1;&#x4E66;&#x3001;Client&#x7AEF;&#x8BC1;&#x4E66;&#x3002;</p>
-<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x901A;&#x8FC7;easy-rsa&#x5206;&#x522B;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x5236;&#x4F5C;&#x3002;</p>
-<h4 id="3-1-&#x5236;&#x4F5C;CA&#x8BC1;&#x4E66;"><a href="#3-1-&#x5236;&#x4F5C;CA&#x8BC1;&#x4E66;" class="headerlink" title="3.1 &#x5236;&#x4F5C;CA&#x8BC1;&#x4E66;"></a>3.1 &#x5236;&#x4F5C;CA&#x8BC1;&#x4E66;</h4><p>openvpn&#x4E0E;easy-rsa&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;/etc/openvpn/&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;easy-rsa&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>sudo mkdir /etc/openvpn/easy-rsa/<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p6.png" alt=""></p>
-<p>&#x7136;&#x540E;&#x628A;/usr/share/easy-rsa/&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x5168;&#x90E8;&#x590D;&#x5236;&#x5230;/etc/openvpn/easy-rsa/&#x4E0B;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>sudo cp -r /usr/share/easy-rsa/* /etc/openvpn/easy-rsa/<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p7.png" alt=""></p>
-<p>&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;/usr/share/easy-rsa/&#x5236;&#x4F5C;&#x76F8;&#x5173;&#x7684;&#x8BC1;&#x4E66;&#xFF0C;&#x4F46;&#x662F;&#x4E3A;&#x4E86;&#x540E;&#x7EED;&#x7684;&#x7BA1;&#x7406;&#x8BC1;&#x4E66;&#x7684;&#x65B9;&#x4FBF;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x628A;easy-rsa&#x653E;&#x5728;&#x4E86;openvpn&#x7684;&#x542F;&#x52A8;&#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x7531;&#x4E8E;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x662F;ubuntu&#x7CFB;&#x7EDF;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x5207;&#x6362;&#x5230;root&#x7528;&#x6237;&#x4E0B;&#x624D;&#x80FD;&#x5236;&#x4F5C;&#x76F8;&#x5173;&#x8BC1;&#x4E66;&#xFF0C;&#x5426;&#x5219;easy-rsa&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x5982;&#x679C;&#x662F;centos&#x7CFB;&#x7EDF;&#xFF0C;&#x5219;&#x4E0D;&#x5B58;&#x5728;&#x6B64;&#x95EE;&#x9898;&#x3002;</p>
-<p>&#x5207;&#x6362;&#x5230;root&#x7528;&#x6237;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
-<p>sudo su<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p8.png" alt=""></p>
-<p>&#x5728;&#x5F00;&#x59CB;&#x5236;&#x4F5C;CA&#x8BC1;&#x4E66;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x7F16;&#x8F91;vars&#x6587;&#x4EF6;&#xFF0C;&#x4FEE;&#x6539;&#x5982;&#x4E0B;&#x76F8;&#x5173;&#x9009;&#x9879;&#x5185;&#x5BB9;&#x5373;&#x53EF;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>sudo vi /etc/openvpn/easy-rsa/vars</p>
-<p>export KEY_COUNTRY=&#x201D;CN&#x201D;</p>
-<p>export KEY_PROVINCE=&#x201D;HZ&#x201D;</p>
-<p>export KEY_CITY=&#x201D;HangZhou&#x201D;</p>
-<p>export KEY_ORG=&#x201D;ilanni&#x201D;</p>
-<p>export KEY_EMAIL=&#x201D;ilanni@ilanni.com&#x201D;</p>
-<p>export KEY_OU=&#x201D;ilanni&#x201D;</p>
-<p>export KEY_NAME=&#x201D;vpnilanni&#x201D;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p9.png" alt=""></p>
-<p>vars&#x6587;&#x4EF6;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x8BC1;&#x4E66;&#x7684;&#x76F8;&#x5173;&#x7EC4;&#x7EC7;&#x4FE1;&#x606F;&#xFF0C;&#x7EA2;&#x8272;&#x90E8;&#x5206;&#x7684;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x81EA;&#x884C;&#x4FEE;&#x6539;&#x3002;</p>
-<p>&#x5176;&#x4E2D;export KEY_NAME=&#x201D;vpnilanni&#x201D;&#x8FD9;&#x4E2A;&#x8981;&#x8BB0;&#x4F4F;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x4E0B;&#x9762;&#x5728;&#x5236;&#x4F5C;Server&#x7AEF;&#x8BC1;&#x4E66;&#x65F6;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x3002;</p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x4EE5;&#x4E0A;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x4E0D;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7684;&#x3002;</p>
-<p>&#x7136;&#x540E;&#x4F7F;&#x7528;source vars&#x547D;&#x4EE4;&#x4F7F;&#x5176;&#x751F;&#x6548;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>source vars</p>
-<p>./clean-all<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p10.png" alt=""></p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x6267;&#x884C;clean-all&#x547D;&#x4EE4;&#x4F1A;&#x5220;&#x9664;&#xFF0C;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x7684;keys&#x6587;&#x4EF6;&#x5939;&#x3002;</p>
-<p>&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x6B63;&#x5F0F;&#x5236;&#x4F5C;CA&#x8BC1;&#x4E66;&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
-<p>./build-ca<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p11.png" alt=""></p>
-<p>&#x4E00;&#x8DEF;&#x6309;&#x56DE;&#x8F66;&#x952E;&#x5373;&#x53EF;&#x3002;&#x5236;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x67E5;&#x770B;keys&#x76EE;&#x5F55;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>ll keys/<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p12.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x660E;&#x663E;&#x7684;&#x770B;&#x5230;&#x5DF2;&#x7ECF;&#x751F;&#x6210;&#x4E86;ca.crt&#x548C;ca.key&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x4E2D;ca.crt&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x6240;&#x8BF4;&#x7684;CA&#x8BC1;&#x4E66;&#x3002;&#x5982;&#x6B64;&#xFF0C;CA&#x8BC1;&#x4E66;&#x5236;&#x4F5C;&#x5B8C;&#x6BD5;&#x3002;</p>
-<p>&#x73B0;&#x5728;&#x628A;&#x8BE5;CA&#x8BC1;&#x4E66;&#x7684;ca.crt&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;openvpn&#x7684;&#x542F;&#x52A8;&#x76EE;&#x5F55;/etc/openvpn&#x4E0B;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>cp keys/ca.crt /etc/openvpn/</p>
-<p>ll /etc/openvpn/<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p13.png" alt=""></p>
-<h4 id="3-2-&#x5236;&#x4F5C;Server&#x7AEF;&#x8BC1;&#x4E66;"><a href="#3-2-&#x5236;&#x4F5C;Server&#x7AEF;&#x8BC1;&#x4E66;" class="headerlink" title="3.2 &#x5236;&#x4F5C;Server&#x7AEF;&#x8BC1;&#x4E66;"></a>3.2 &#x5236;&#x4F5C;Server&#x7AEF;&#x8BC1;&#x4E66;</h4><p>CA&#x8BC1;&#x4E66;&#x5236;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x5236;&#x4F5C;Server&#x7AEF;&#x8BC1;&#x4E66;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>./build-key-server vpnilanni<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p14.png" alt=""><br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p15.png" alt=""></p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x4E2D;vpnilanni&#xFF0C;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x524D;&#x9762;vars&#x6587;&#x4EF6;&#x4E2D;&#x8BBE;&#x7F6E;&#x7684;KEY_NAME</p>
-<p>&#x67E5;&#x770B;&#x751F;&#x6210;&#x7684;Server&#x7AEF;&#x8BC1;&#x4E66;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>ll keys/<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p16.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x660E;&#x663E;&#x7684;&#x770B;&#x5230;&#x5DF2;&#x7ECF;&#x751F;&#x6210;&#x4E86;vpnilanni.crt&#x3001;vpnilanni.key&#x548C;vpnilanni.csr&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#x3002;&#x5176;&#x4E2D;vpnilanni.crt&#x548C;vpnilanni.key&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x3002;</p>
-<p>&#x73B0;&#x5728;&#x518D;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#x751F;&#x6210;&#x52A0;&#x5BC6;&#x4EA4;&#x6362;&#x65F6;&#x7684;Diffie-Hellman&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>./build-dh<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p17.png" alt=""></p>
-<p>&#x67E5;&#x770B;&#x751F;&#x6210;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>ll keys/<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p18.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x660E;&#x663E;&#x7684;&#x770B;&#x51FA;&#x5DF2;&#x7ECF;&#x751F;&#x6210;&#x4E86;dh2048.pem&#xFF0C;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x3002;</p>
-<p>&#x4EE5;&#x4E0A;&#x64CD;&#x4F5C;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x628A;vpnilanni.crt&#x3001;vpnilanni.key&#x3001;dh2048.pem&#x590D;&#x5236;&#x5230;/etc/openvpn/&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>cp keys/vpnilanni.crt keys/vpnilanni.key keys/dh2048.pem /etc/openvpn/<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p19.png" alt=""></p>
-<p>&#x5982;&#x6B64;&#xFF0C;Server&#x7AEF;&#x8BC1;&#x4E66;&#x5C31;&#x5236;&#x4F5C;&#x5B8C;&#x6BD5;&#x3002;</p>
-<h4 id="3-3-&#x5236;&#x4F5C;Client&#x7AEF;&#x8BC1;&#x4E66;"><a href="#3-3-&#x5236;&#x4F5C;Client&#x7AEF;&#x8BC1;&#x4E66;" class="headerlink" title="3.3 &#x5236;&#x4F5C;Client&#x7AEF;&#x8BC1;&#x4E66;"></a>3.3 &#x5236;&#x4F5C;Client&#x7AEF;&#x8BC1;&#x4E66;</h4><p>Server&#x7AEF;&#x8BC1;&#x4E66;&#x5236;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x5236;&#x4F5C;Client&#x7AEF;&#x8BC1;&#x4E66;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>./build-key ilanni<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p20.png" alt=""><br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p21.png" alt=""></p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x4E2D;&#x7684;ilanni&#xFF0C;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x540D;&#x79F0;&#x3002;&#x8FD9;&#x4E2A;&#x662F;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5FEB;&#x901F;&#x751F;&#x6210;&#x7528;&#x6237;&#x8BC1;&#x4E66;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x4EA4;&#x4E92;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
-<p>./build-key &#x2013;batch test1<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p22.png" alt=""><br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p23.png" alt=""></p>
-<p>&#x67E5;&#x770B;&#x751F;&#x6210;&#x7684;&#x8BC1;&#x4E66;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>ll keys/<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p24.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x660E;&#x663E;&#x7684;&#x770B;&#x51FA;&#x5DF2;&#x7ECF;&#x751F;&#x6210;&#x4E86;ilanni.csr&#x3001;ilanni.crt&#x548C;ilanni.key&#x8FD9;&#x4E2A;&#x4E09;&#x4E2A;&#x6587;&#x4EF6;&#x3002;&#x5176;&#x4E2D;ilanni.crt&#x548C;ilanni.key&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x3002;</p>
-<p>&#x5982;&#x6B64;&#xFF0C;Client&#x7AEF;&#x8BC1;&#x4E66;&#x5C31;&#x5236;&#x4F5C;&#x5B8C;&#x6BD5;&#x3002;</p>
-<h3 id="&#x56DB;&#x3001;&#x914D;&#x7F6E;Server&#x7AEF;"><a href="#&#x56DB;&#x3001;&#x914D;&#x7F6E;Server&#x7AEF;" class="headerlink" title="&#x56DB;&#x3001;&#x914D;&#x7F6E;Server&#x7AEF;"></a>&#x56DB;&#x3001;&#x914D;&#x7F6E;Server&#x7AEF;</h3><p>&#x6240;&#x6709;&#x8BC1;&#x4E66;&#x5236;&#x4F5C;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x914D;&#x7F6E;Server&#x7AEF;&#x3002;Server&#x7AEF;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4ECE;openvpn&#x81EA;&#x5E26;&#x7684;&#x6A21;&#x7248;&#x4E2D;&#x8FDB;&#x884C;&#x590D;&#x5236;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf.gz /etc/openvpn/</p>
-<p>cd /etc/openvpn/<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p25.png" alt=""></p>
-<p>&#x89E3;&#x538B;server.conf.gz &#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
-<p>gzip -d server.conf.gz<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p26.png" alt=""></p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E0A;&#x8FF0;&#x547D;&#x4EE4;&#x7684;&#x610F;&#x601D;&#x662F;&#x89E3;&#x538B;server.conf.gz&#x6587;&#x4EF6;&#x540E;&#xFF0C;&#x7136;&#x540E;&#x5220;&#x9664;&#x539F;&#x6587;&#x4EF6;&#x3002;</p>
-<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6765;&#x4FEE;&#x6539;server.conf&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>grep -vE &#x201C;^#|^;|^$&#x201D; server.conf</p>
-<p>port 1194</p>
-<p>proto tcp</p>
-<p>dev tun</p>
-<p>ca ca.crt</p>
-<p>cert vpnilanni.crt</p>
-<p>key vpnilanni.key</p>
-<p>dh dh2048.pem</p>
-<p>server 10.8.0.0 255.255.255.0</p>
-<p>ifconfig-pool-persist ipp.txt</p>
-<p>keepalive 10 120</p>
-<p>comp-lzo</p>
-<p>persist-key</p>
-<p>persist-tun</p>
-<p>status openvpn-status.log</p>
-<p>verb 3<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p27.png" alt=""></p>
-<p>&#x4E0E;&#x539F;&#x6A21;&#x7248;&#x6587;&#x4EF6;&#x76F8;&#x6BD4;&#xFF0C;&#x5728;&#x6B64;&#x6211;&#x4FEE;&#x6539;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#x3002;</p>
-<p>&#x7B2C;&#x4E00;&#x3001;&#x4FEE;&#x6539;&#x4E86;openvpn&#x8FD0;&#x884C;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x7531;&#x539F;&#x6765;&#x7684;UDP&#x534F;&#x8BAE;&#x4FEE;&#x6539;&#x4E3A;TCP&#x534F;&#x8BAE;&#x3002;&#x751F;&#x6210;&#x73AF;&#x5883;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;TCP&#x534F;&#x8BAE;&#x3002;</p>
-<p>&#x7B2C;&#x4E8C;&#x3001;&#x4FEE;&#x6539;&#x4E86;openvpn&#x670D;&#x52A1;&#x5668;&#x7684;&#x76F8;&#x5173;&#x8BC1;&#x4E66;&#xFF0C;&#x7531;&#x539F;&#x6765;&#x7684;server.csr&#x3001;server.key&#x4FEE;&#x6539;&#x4E3A;vpnilanni.crt&#x3001;vpnilanni.key&#x3002;</p>
-<p>&#x7B2C;&#x4E09;&#x3001;&#x4FEE;&#x6539;&#x4E86;Diffie-Hellman&#x6587;&#x4EF6;&#xFF0C;&#x7531;&#x539F;&#x6765;&#x7684;dh1024.pem&#x4FEE;&#x6539;&#x4E3A;dh2048.pem&#x3002;</p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E0A;&#x8FF0;server.conf&#x6587;&#x4EF6;&#x4E2D;vpnilanni.crt&#x3001;vpnilanni.key&#x3001;dh2048.pem&#x8981;&#x4E0E;/etc/openvpn/&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x3002;</p>
-<p>&#x540C;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4E0A;&#x8FF0;&#x6587;&#x4EF6;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B58;&#x653E;&#x5728;/etc/openvpn/&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x5728;server.conf&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x586B;&#x5199;&#x8BE5;&#x6587;&#x4EF6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x3002;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p28.png" alt=""></p>
-<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4FEE;&#x6539;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x6765;&#x542F;&#x52A8;openvpn&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
-<p>/etc/init.d/openvpn start</p>
-<p>netstat -tunlp |grep 1194<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p29.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x660E;&#x663E;&#x7684;&#x770B;&#x51FA;openvpn&#x5DF2;&#x7ECF;&#x5728;&#x6B64;&#x542F;&#x52A8;&#xFF0C;&#x800C;&#x4E14;&#x4E5F;&#x786E;&#x5B9E;&#x4F7F;&#x7528;&#x7684;TCP&#x534F;&#x8BAE;&#x7684;1194&#x7AEF;&#x53E3;&#x3002;</p>
-<h3 id="&#x4E94;&#x3001;&#x914D;&#x7F6E;Client&#x7AEF;"><a href="#&#x4E94;&#x3001;&#x914D;&#x7F6E;Client&#x7AEF;" class="headerlink" title="&#x4E94;&#x3001;&#x914D;&#x7F6E;Client&#x7AEF;"></a>&#x4E94;&#x3001;&#x914D;&#x7F6E;Client&#x7AEF;</h3><p>Server&#x7AEF;&#x914D;&#x7F6E;&#x5E76;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x6765;&#x914D;&#x7F6E;Client&#x7AEF;&#x3002;Client&#x7AEF;&#x6839;&#x636E;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x53C8;&#x5206;&#x4E3A;Linux OS&#x4E0A;&#x548C;Windows OS&#x4E0A;&#x3002;&#x4EE5;&#x4E0B;&#x6211;&#x4EEC;&#x5BF9;&#x6B64;&#x4E00;&#x4E00;&#x60CA;&#x9192;&#x8BB2;&#x89E3;&#x3002;</p>
-<h4 id="5-1-&#x5728;Windows-OS&#x4E0A;"><a href="#5-1-&#x5728;Windows-OS&#x4E0A;" class="headerlink" title="5.1 &#x5728;Windows OS&#x4E0A;"></a>5.1 &#x5728;Windows OS&#x4E0A;</h4><p>&#x65E0;&#x8BBA;&#x662F;&#x5728;Windows OS&#x8FD8;&#x662F;&#x5728;Linux OS&#x4E0A;Client&#x7AEF;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x9700;&#x8981;&#x628A;Client&#x8BC1;&#x4E66;&#x3001;CA&#x8BC1;&#x4E66;&#x4EE5;&#x53CA;Client&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x4E0B;&#x6765;&#x3002;</p>
-<p>&#x5148;&#x6765;&#x4E0B;&#x8F7D;Client&#x8BC1;&#x4E66;&#x548C;CA&#x8BC1;&#x4E66;&#xFF0C;Client&#x8BC1;&#x4E66;&#x6211;&#x4EEC;&#x4E3B;&#x8981;&#x4F7F;&#x7528;crt&#x548C;key&#x7ED3;&#x5C3E;&#x7684;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x800C;CA&#x8BC1;&#x4E66;&#x6211;&#x4EEC;&#x4E3B;&#x8981;&#x4F7F;&#x7528;crt&#x7ED3;&#x5C3E;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x5982;&#x4E0B;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p30.png" alt=""></p>
-<p>&#x5148;&#x628A;&#x8FD9;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;/home/ilanni/&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x628A;openvpn&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6A21;&#x7248;&#x4E5F;&#x590D;&#x5236;&#x5230;/home/ilanni/&#x76EE;&#x5F55;&#x4E0B;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>cp ilanni.crt ilanni.key ca.crt /home/ilanni/</p>
-<p>cp /usr/share/doc/openvpn/examples/sample-config-files/client.conf /home/ilanni/<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p31.png" alt=""></p>
-<p>&#x4FEE;&#x6539;&#x4EE5;&#x4E0A;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x7528;&#x6237;&#x5C5E;&#x6027;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>chown ilanni:ilanni ilanni.*</p>
-<p>chown ilanni:ilanni ca.crt<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p32.png" alt=""></p>
-<p>&#x4FEE;&#x6539;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x9000;&#x51FA;root&#x7528;&#x6237;&#xFF0C;&#x56DE;&#x5230;ilanni&#x7528;&#x6237;&#x7684;&#x5BB6;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;sz&#x547D;&#x4EE4;&#x628A;&#x8FD9;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x4E0B;&#x6765;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>sz -y ilanni.crt ilanni.key ca.crt client.conf<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p33.png" alt=""><br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p34.png" alt=""></p>
-<p>&#x4E0B;&#x8F7D;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x628A;client.conf&#x6587;&#x4EF6;&#x91CD;&#x547D;&#x540D;&#x4E3A;client.ovpn&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x7F16;&#x8F91;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>client</p>
-<p>dev tun</p>
-<p>proto tcp</p>
-<p>remote 192.168.1.8 1194</p>
-<p>resolv-retry infinite</p>
-<p>nobind</p>
-<p>persist-key</p>
-<p>persist-tun</p>
-<p>ca ca.crt</p>
-<p>cert ilanni.crt</p>
-<p>key ilanni.key</p>
-<p>ns-cert-type server</p>
-<p>comp-lzo</p>
-<p>verb 3<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p35.png" alt=""></p>
-<p>Client&#x914D;&#x7F6E;&#x6587;&#x4EF6;client.ovpn&#xFF0C;&#x6211;&#x4FEE;&#x6539;&#x4E86;&#x51E0;&#x4E2A;&#x5730;&#x65B9;&#xFF1A;</p>
-<p>&#x7B2C;&#x4E00;&#x3001;&#x4F7F;&#x7528;&#x7684;&#x534F;&#x8BAE;&#xFF0C;&#x7531;&#x539F;&#x6765;&#x7684;UDP&#x4FEE;&#x6539;&#x4E3A;TCP&#xFF0C;&#x8FD9;&#x4E2A;&#x4E00;&#x5B9A;&#x8981;&#x548C;Server&#x7AEF;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;&#x5426;&#x5219;Client&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#x3002;</p>
-<p>&#x7B2C;&#x4E8C;&#x3001;remote&#x5730;&#x5740;&#xFF0C;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#x8981;&#x4FEE;&#x6539;&#x4E3A;Server&#x7AEF;&#x7684;&#x5730;&#x5740;&#x3002;</p>
-<p>&#x7B2C;&#x4E09;&#x3001;Client&#x8BC1;&#x4E66;&#x540D;&#x79F0;&#xFF0C;&#x8FD9;&#x4E2A;&#x8981;&#x548C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x4F7F;&#x7528;&#x7684;Client&#x8BC1;&#x4E66;&#x540D;&#x79F0;&#x4FDD;&#x6301;&#x4E00;&#x76F4;&#x3002;</p>
-<p>&#x4EE5;&#x4E0A;&#x4FEE;&#x6539;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x628A;&#x8FD9;&#x4E2A;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x653E;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5E76;&#x4E14;&#x4E00;&#x5B9A;&#x8981;&#x4FDD;&#x6301;client.ovpn&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x79F0;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3002;&#x5426;&#x5219;&#x5728;openvpn&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x5982;&#x4E0B;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p36.png" alt=""></p>
-<p>&#x5B89;&#x88C5;openvpn for windows&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4ECE;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#x4E0B;&#x8F7D;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;<a href="http://build.openvpn.net/downloads/releases/" target="_blank" rel="external">http://build.openvpn.net/downloads/releases/</a></p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E0B;&#x8F7D;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x7248;&#x672C;&#x53F7;&#x4E00;&#x5B9A;&#x8981;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x7AEF;openvpn&#x7684;&#x7248;&#x672C;&#x4E00;&#x76F4;&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x4F1A;&#x51FA;&#x73B0;&#x65E0;&#x6CD5;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x7684;&#x73B0;&#x8C61;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;openvpn&#x7248;&#x672C;&#x662F;2.3.2&#xFF0C;&#x6240;&#x4EE5;&#x5BA2;&#x6237;&#x7AEF;&#x4E5F;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;2.3.2&#x7684;&#x7248;&#x672C;&#x3002;</p>
-<p>&#x4E0B;&#x8F7D;&#x5E76;&#x5B89;&#x88C5;&#x540E;&#xFF0C;&#x628A;testilanni&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x590D;&#x5236;&#x5230;openvpn&#x5BA2;&#x6237;&#x7AEF;&#x5B89;&#x88C5;&#x7684;config&#x6587;&#x4EF6;&#x5939;&#x3002;&#x5982;&#x4E0B;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p37.png" alt=""></p>
-<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x6765;&#x542F;&#x52A8;openvpn&#x5BA2;&#x6237;&#x7AEF;&#x8FDE;&#x63A5;Server&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p38.png" alt=""></p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E0A;&#x56FE;&#x4E2D;&#x7684;client&#x5C31;&#x662F;&#x6839;&#x636E;client.ovpn&#xFF0C;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x540D;&#x6765;&#x7684;&#x3002;</p>
-<p>&#x70B9;&#x51FB;connect&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x7684;&#x5F39;&#x7A97;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p39.png" alt=""></p>
-<p>&#x5982;&#x679C;&#x914D;&#x7F6E;&#x90FD;&#x6B63;&#x786E;&#x7684;&#x8BDD;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x5982;&#x4E0B;&#x7684;&#x63D0;&#x793A;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p40.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x660E;&#x663E;&#x7684;&#x770B;&#x5230;Client&#x5DF2;&#x7ECF;&#x6B63;&#x786E;&#x8FDE;&#x63A5;Server&#x7AEF;&#xFF0C;&#x5E76;&#x4E14;&#x83B7;&#x5F97;&#x7684;IP&#x5730;&#x5740;&#x662F;10.8.0.6&#x3002;</p>
-<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5728;&#x672C;&#x673A;&#x67E5;&#x770B;&#x4E0B;&#xFF0C;&#x8BE5;IP&#x5730;&#x5740;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p41.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x672C;&#x673A;&#x786E;&#x5B9E;&#x5DF2;&#x7ECF;&#x8FDE;&#x63A5;&#x5230;Server&#x7AEF;&#xFF0C;&#x800C;&#x4E14;&#x83B7;&#x5F97;&#x7684;IP&#x5730;&#x5740;&#x4E5F;&#x786E;&#x5B9E;&#x4E3A;10.8.0.6&#x3002;</p>
-<h4 id="5-2-&#x5728;Linux-OS&#x4E0A;"><a href="#5-2-&#x5728;Linux-OS&#x4E0A;" class="headerlink" title="5.2 &#x5728;Linux OS&#x4E0A;"></a>5.2 &#x5728;Linux OS&#x4E0A;</h4><p>&#x5728;Windows OS&#x4E0A;&#x6D4B;&#x8BD5;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x5728;&#x5207;&#x6362;&#x5230;linux&#x7CFB;&#x7EDF;&#x3002;&#x5728;&#x6B64;&#x6211;&#x4EEC;&#x4EE5;ubuntu14.04&#x4E3A;&#x4F8B;&#x3002;</p>
-<p>&#x8981;&#x5728;ubuntu&#x4E0A;&#x8FDE;&#x63A5;openvpnServer&#x7AEF;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;openvpn&#x8F6F;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>sudo apt-get -y install openvpn<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p42.png" alt=""></p>
-<p>&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x628A;&#x6211;&#x4EEC;&#x521A;&#x521A;&#x5728;Windows&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#x7684;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;ubuntu&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;&#x5982;&#x4E0B;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p43.png" alt=""></p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E0A;&#x4F20;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x4EFB;&#x4F55;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;&#x56E0;&#x4E3A;&#x8FD9;&#x51E0;&#x4E2A;&#x6587;&#x4EF6;&#x5728;Windows&#x4E0B;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x6B63;&#x786E;&#x8FDE;&#x63A5;openvpn Server&#x7AEF;&#x3002;</p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x5728;&#x8FDE;&#x63A5;Server&#x7AEF;&#x4E4B;&#x524D;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x5207;&#x6362;&#x5230;root&#x7528;&#x6237;&#x4E0B;&#x3002;&#x56E0;&#x4E3A;&#x5728;&#x8FDE;&#x63A5;Server&#x7AEF;&#x65F6;&#xFF0C;openvpn&#x4F1A;&#x5728;&#x672C;&#x673A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x865A;&#x62DF;&#x7F51;&#x5361;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x666E;&#x901A;&#x7528;&#x6237;&#x7684;&#x8BDD;&#xFF0C;&#x662F;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x521B;&#x5EFA;&#x865A;&#x62DF;&#x7F51;&#x5361;&#x7684;&#x3002;</p>
-<p>&#x5207;&#x6362;&#x5230;root&#x7528;&#x6237;&#xFF0C;&#x4F7F;&#x7528;sudo su&#x547D;&#x4EE4;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>sudo su<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p44.png" alt=""></p>
-<p>&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x8FDE;&#x63A5;Server&#x7AEF;&#xFF0C;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
-<p>openvpn &#x2013;config client.ovpn<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p45.png" alt=""></p>
-<p>&#x5982;&#x679C;&#x51FA;&#x73B0;&#x4E0A;&#x56FE;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8BF4;&#x660E;&#x5DF2;&#x7ECF;&#x6B63;&#x786E;&#x8FDE;&#x63A5;Server&#x7AEF;&#x3002;</p>
-<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5728;&#x672C;&#x673A;&#x4F7F;&#x7528;ifconfig&#x8FDB;&#x884C;&#x67E5;&#x770B;&#xFF0C;&#x5728;&#x6B64;&#x5EFA;&#x8BAE;&#x91CD;&#x65B0;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;ssh&#x7A97;&#x53E3;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>ifconfig<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p46.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x4E0A;&#x56FE;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x660E;&#x663E;&#x7684;&#x770B;&#x51FA;&#xFF0C;&#x672C;&#x673A;&#x5DF2;&#x7ECF;&#x6B63;&#x786E;&#x8FDE;&#x63A5;Server&#x7AEF;&#xFF0C;&#x5E76;&#x4E14;&#x4E5F;&#x5728;&#x672C;&#x673A;&#x865A;&#x62DF;&#x51FA;&#x4E00;&#x4E2A;&#x53EB;tun0&#x7684;&#x865A;&#x62DF;&#x7F51;&#x5361;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x60F3;&#x8BA9;ubuntu&#x5F00;&#x673A;&#x542F;&#x52A8;&#x5E76;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x7684;&#x8BDD;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x6761;&#x547D;&#x4EE4;&#x5199;&#x5165;rc.local&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>/usr/sbin/openvpn &#x2013;config /home/ilanni/testilanni/client.ovpn &gt;/var/log/openvpn.log &amp;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p47.png" alt=""></p>
-<p>&#x6CE8;&#x610F;&#xFF0C;&#x547D;&#x4EE4;&#x672B;&#x5C3E;&#x7684;&amp;&#x7B26;&#x53F7;&#x4E0D;&#x80FD;&#x7701;&#x7565;&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x53EF;&#x80FD;&#x963B;&#x585E;&#x7CFB;&#x7EDF;&#x7684;&#x6B63;&#x5E38;&#x542F;&#x52A8;&#x3002;</p>
-<p>&#x540C;&#x65F6;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;client.ovpn&#x6587;&#x4EF6;&#x4E2D;&#x6709;&#x5173;&#x8BC1;&#x4E66;&#x7684;&#x914D;&#x7F6E;&#x4E00;&#x5B9A;&#x8981;&#x5199;&#x6210;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x7CFB;&#x7EDF;&#x4F1A;&#x62A5;&#x9519;&#x3002;&#x5982;&#x4E0B;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p48.png" alt=""></p>
-<p>&#x5982;&#x679C;&#x662F;centos&#x7CFB;&#x7EDF;&#x7684;&#x8BDD;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x9700;&#x8981;&#x5B89;&#x88C5;epel&#x6E90;&#xFF0C;&#x7136;&#x540E;&#x5B89;&#x88C5;openvpn&#x8F6F;&#x4EF6;&#x5305;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>rpm -ivh <a href="http://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm" target="_blank" rel="external">http://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm</a></p>
-<p>yum -y install openvpn</p>
-<p>&#x4EE5;&#x4E0A;&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x628A;Windows&#x5DF2;&#x7ECF;&#x6210;&#x529F;&#x8FDE;&#x63A5;&#x7684;Client&#x76F8;&#x5173;&#x6587;&#x4EF6;&#x4E0A;&#x4F20;&#x5230;centos&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x8FDE;&#x63A5;&#x65B9;&#x6CD5;&#x548C;ubuntu&#x7CFB;&#x7EDF;&#x4E0A;&#x4E00;&#x6837;&#x3002;</p>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x5728;centos&#x7CFB;&#x7EDF;&#x8981;&#x5F00;&#x673A;&#x542F;&#x52A8;&#x7684;&#x8BDD;&#xFF0C;&#x4E5F;&#x662F;&#x548C;ubuntu&#x7CFB;&#x7EDF;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x4E00;&#x70B9;&#x9700;&#x8981;&#x6307;&#x51FA;&#x5C31;&#x662F;Client&#x76F8;&#x5173;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E0D;&#x80FD;&#x653E;&#x5728;/root&#x76EE;&#x5F55;&#x4E0B;&#x3002;</p>
-<p>&#x7ED9;&#x4E00;&#x4E2A;&#x6B63;&#x786E;&#x914D;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;<br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p49.png" alt=""><br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p50.png" alt=""><br><img src="/2016/09/05/ubuntu15-04&#x642D;&#x5EFA;OpenVPN&#x670D;&#x52A1;&#x5668;/../../../../asset/p51.png" alt=""></p>
-<p>&#x56E0;&#x4E3A;centos&#x7684;openvpn server&#x914D;&#x7F6E;&#x548C;unubutn&#x57FA;&#x672C;&#x4E00;&#x6837;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x4E0D;&#x518D;&#x5355;&#x72EC;&#x5199;&#x4E00;&#x7BC7;&#x6709;&#x5173;centos&#x4E0B;&#x5B89;&#x88C5;&#x914D;&#x7F6E;openvpn sever&#x7684;&#x6587;&#x7AE0;&#x3002;</p>
-<p>&#x4F46;&#x662F;&#x9644;&#x4E0A;&#x5728;centos&#x4E0B;&#xFF0C;&#x6240;&#x6709;&#x6267;&#x884C;&#x7684;&#x547D;&#x4EE4;&#x3002;&#x5982;&#x4E0B;&#xFF1A;</p>
-<p>rpm -ivh <a href="http://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm" target="_blank" rel="external">http://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm</a></p>
-<p>yum -y install openvpn</p>
-<p>rpm -ql openvpn</p>
-<p>cat /usr/share/doc/openvpn-2.3.7/sample/sample-config-files/README</p>
-<p><a href="http://openvpn.net/howto.html" target="_blank" rel="external">http://openvpn.net/howto.html</a></p>
-<p>yum -y install easy-rsa</p>
-<p>rpm -ql easy-rsa</p>
-<p>cd /usr/share/easy-rsa/2.0/</p>
-<p>vim vars</p>
-<p>export KEY_COUNTRY=&#x201D;CN&#x201D;</p>
-<p>export KEY_PROVINCE=&#x201D;HangZhou&#x201D;</p>
-<p>export KEY_CITY=&#x201D;HZ&#x201D;</p>
-<p>export KEY_ORG=&#x201D;ilanni&#x201D;</p>
-<p>export KEY_EMAIL=&#x201D;ilanni@ilanni.com&#x201D;</p>
-<p>export KEY_OU=&#x201D;MyOrganizationalUnit&#x201D;</p>
-<p>export KEY_NAME=&#x201D;ilanni&#x201D;</p>
-<p>source vars</p>
-<p>./clean-all</p>
-<p>./build-ca</p>
-<p>./build-key-server ilanni</p>
-<p>./build-dh</p>
-<p>./build-key centos</p>
-<p>cd&#xA0; keys</p>
-<p>cp ca.crt ilanni.key ilanni.crt /etc/openvpn/</p>
-<p>cp ca.crt centos.key centos.crt /root/</p>
-<p>cp /usr/share/doc/openvpn-2.3.7/sample/sample-config-files/client.conf /root</p>
-<p>cp /usr/share/doc/openvpn-2.3.7/sample/sample-config-files/server.conf /etc/openvpn/</p>
-<p>&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</p>
-<p>vim /etc/openvpn/server.conf</p>
-<p>grep -vE &#x201C;;|#|^$&#x201D; /etc/openvpn/server.conf</p>
-<p>port 1194</p>
-<p>proto udp</p>
-<p>dev tun</p>
-<p>ca ca.crt</p>
-<p>cert ilanni.crt</p>
-<p>dh dh2048.pem</p>
-<p>server 10.8.0.0 255.255.255.0</p>
-<p>ifconfig-pool-persist ipp.txt</p>
-<p>keepalive 10 120</p>
-<p>comp-lzo</p>
-<p>persist-key</p>
-<p>persist-tun</p>
-<p>status openvpn-status.log</p>
-<p>verb 3</p>
-<p>&#x5BA2;&#x6237;&#x7AEF;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</p>
-<p>grep -vE &#x201C;;|#|^$&#x201D; centos.conf</p>
-<p>client</p>
-<p>dev tun</p>
-<p>proto udp</p>
-<p>remote 182.254.223.140 1194</p>
-<p>resolv-retry infinite</p>
-<p>nobind</p>
-<p>persist-key</p>
-<p>persist-tun</p>
-<p>ca ca.crt</p>
-<p>cert centos.crt</p>
-<p>key centos.key</p>
-<p>remote-cert-tls server</p>
-<p>comp-lzo</p>
-<p>verb 3</p>
-<p>&#x6765;&#x6E90;&#xFF1A;<a href="http://www.ilanni.com" target="_blank" rel="external">http://www.ilanni.com</a></p>
-
+<p>PS&#xFF1A;&#x672C;&#x6587;&#x5728;ubuntu 14.04&#x4E0A;&#x5B89;&#x88C5;&#xFF0C;openvpn&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x4E3A;192.168.1.8&#x3002;<br></p>
+          
       
     </div>
     
@@ -589,6 +360,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搭建环境/">搭建环境</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/09/05/ubuntu15-04搭建OpenVPN服务器/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -633,19 +408,12 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="virtualbox&#x4E0B;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;"><a href="#virtualbox&#x4E0B;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;" class="headerlink" title="virtualbox&#x4E0B;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;"></a>virtualbox&#x4E0B;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;</h2><h3 id="HostOnly-Net&#xFF0C;&#x5B9E;&#x73B0;&#x865A;&#x62DF;&#x673A;&#x8BBF;&#x95EE;&#x4E92;&#x8054;&#x7F51;&#xFF0C;-&#x865A;&#x62DF;&#x673A;&#x548C;&#x4E3B;&#x673A;&#x4E92;&#x8BBF;"><a href="#HostOnly-Net&#xFF0C;&#x5B9E;&#x73B0;&#x865A;&#x62DF;&#x673A;&#x8BBF;&#x95EE;&#x4E92;&#x8054;&#x7F51;&#xFF0C;-&#x865A;&#x62DF;&#x673A;&#x548C;&#x4E3B;&#x673A;&#x4E92;&#x8BBF;" class="headerlink" title="HostOnly+Net&#xFF0C;&#x5B9E;&#x73B0;&#x865A;&#x62DF;&#x673A;&#x8BBF;&#x95EE;&#x4E92;&#x8054;&#x7F51;&#xFF0C; &#x865A;&#x62DF;&#x673A;&#x548C;&#x4E3B;&#x673A;&#x4E92;&#x8BBF;"></a>HostOnly+Net&#xFF0C;&#x5B9E;&#x73B0;&#x865A;&#x62DF;&#x673A;&#x8BBF;&#x95EE;&#x4E92;&#x8054;&#x7F51;&#xFF0C; &#x865A;&#x62DF;&#x673A;&#x548C;&#x4E3B;&#x673A;&#x4E92;&#x8BBF;</h3><p>&#x5176;&#x5B9E;&#x7F51;&#x7EDC;&#x8FD9;&#x7C7B;&#x76F8;&#x5173;&#x7684;&#x6587;&#x7AE0;&#x5F88;&#x591A;&#xFF0C;&#x6211;&#x53EA;&#x662F;&#x60F3;&#x7ED3;&#x5408;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#xFF0C;&#x628A;&#x6211;&#x7684;&#x7ECF;&#x9A8C;&#x5199;&#x4E0B;&#x6765;&#xFF0C;&#x7ED9;&#x90A3;&#x4E9B;&#x9700;&#x8981;&#x7684;&#x4EBA;&#x4EEC;&#x5427;&#x3002;</p>
+              <h2 id="virtualbox&#x4E0B;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;"><a href="#virtualbox&#x4E0B;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;" class="headerlink" title="virtualbox&#x4E0B;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;"></a>virtualbox&#x4E0B;&#x7F51;&#x7EDC;&#x914D;&#x7F6E;</h2><h3 id="HostOnly-Net&#xFF0C;&#x5B9E;&#x73B0;&#x865A;&#x62DF;&#x673A;&#x8BBF;&#x95EE;&#x4E92;&#x8054;&#x7F51;&#xFF0C;-&#x865A;&#x62DF;&#x673A;&#x548C;&#x4E3B;&#x673A;&#x4E92;&#x8BBF;"><a href="#HostOnly-Net&#xFF0C;&#x5B9E;&#x73B0;&#x865A;&#x62DF;&#x673A;&#x8BBF;&#x95EE;&#x4E92;&#x8054;&#x7F51;&#xFF0C;-&#x865A;&#x62DF;&#x673A;&#x548C;&#x4E3B;&#x673A;&#x4E92;&#x8BBF;" class="headerlink" title="HostOnly+Net&#xFF0C;&#x5B9E;&#x73B0;&#x865A;&#x62DF;&#x673A;&#x8BBF;&#x95EE;&#x4E92;&#x8054;&#x7F51;&#xFF0C; &#x865A;&#x62DF;&#x673A;&#x548C;&#x4E3B;&#x673A;&#x4E92;&#x8BBF;"></a>HostOnly+Net&#xFF0C;&#x5B9E;&#x73B0;&#x865A;&#x62DF;&#x673A;&#x8BBF;&#x95EE;&#x4E92;&#x8054;&#x7F51;&#xFF0C; &#x865A;&#x62DF;&#x673A;&#x548C;&#x4E3B;&#x673A;&#x4E92;&#x8BBF;</h3><p>&#x5176;&#x5B9E;&#x7F51;&#x7EDC;&#x8FD9;&#x7C7B;&#x76F8;&#x5173;&#x7684;&#x6587;&#x7AE0;&#x5F88;&#x591A;&#xFF0C;&#x6211;&#x53EA;&#x662F;&#x60F3;&#x7ED3;&#x5408;&#x81EA;&#x5DF1;&#x7684;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#xFF0C;&#x628A;&#x6211;&#x7684;&#x7ECF;&#x9A8C;&#x5199;&#x4E0B;&#x6765;&#xFF0C;&#x7ED9;&#x90A3;&#x4E9B;&#x9700;&#x8981;&#x7684;&#x4EBA;&#x4EEC;&#x5427;&#x3002;</p>
 <ul>
 <li>&#x4E3B;&#x673A;&#xFF1A;windows7</li>
 <li>&#x865A;&#x62DF;&#x673A;&#xFF1A;centos7</li>
-<li>Virtualbox&#xFF1A;5.0.24</li>
-</ul>
-<p>&#x865A;&#x62DF;&#x673A;&#x5728;&#x5B89;&#x88C5;&#x597D;&#x4E4B;&#x540E;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x662F;&#x901A;&#x8FC7;NAT&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x865A;&#x62DF;&#x673A;&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x4E0A;&#x7F51;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4E3B;&#x673A;&#xFF0C;&#x4F46;&#x662F;&#x4E3B;&#x673A;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x865A;&#x62DF;&#x673A;&#x3002;&#x6211;&#x4EEC;&#x60F3;&#x5F97;&#x5230;&#x7684;&#x6548;&#x679C;&#x662F;&#x7269;&#x7406;&#x673A;&#x548C;&#x865A;&#x62DF;&#x673A;&#x4E92;&#x8BBF;&#xFF0C;&#x540C;&#x65F6;&#x865A;&#x62DF;&#x673A;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4E92;&#x8054;&#x7F51;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x542F;&#x7528;&#x7B2C;&#x4E8C;&#x4E2A;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#xFF0C;&#x5E76;&#x5C06;&#x6539;&#x63A5;&#x53E3;&#x6539;&#x4E3A;HostOnly&#x65B9;&#x5F0F;&#x3002;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x7684;&#x7528;&#x9014;&#x7528;&#x6765;&#x8DDF;&#x4E3B;&#x673A;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x7684;&#x3002;&#x5728;VBox&#x5B89;&#x88C5;&#x597D;&#x4E4B;&#x540E;&#xFF0C;&#x7269;&#x7406;&#x4E3B;&#x673A;&#x7CFB;&#x7EDF;&#x4F1A;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x7F51;&#x5361;(VirtualBox Host-Only Network)&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x8BE5;&#x7F51;&#x5361;IP&#x4E3A;192.168.56.1&#xFF0C;&#x8BB0;&#x4F4F;&#x4E00;&#x5B9A;&#x8981;&#x5C06;&#x8BE5;&#x7F51;&#x5361;&#x8BBE;&#x4E3A;&#x542F;&#x7528;&#x3002;</p>
-<p>&#x5C06;&#x865A;&#x62DF;&#x673A;&#x542F;&#x52A8;&#x540E;&#xFF0C;&#x4F1A;&#x6709;&#x4E24;&#x4E2A;&#x7F51;&#x5361;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x539F;&#x5148;&#x7684;&#x7F51;&#x5361;&#xFF0C;ip&#x5730;&#x5740;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x662F;10.0.2.x&#xFF0C;&#x6B64;&#x7F51;&#x5361;&#x662F;&#x901A;&#x8FC7;NAT&#x65B9;&#x5F0F;&#x4E0E;&#x4E3B;&#x673A;&#x8FDE;&#x63A5;&#x7684;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x6765;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;&#xFF0C;&#x53E6;&#x5916;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7F51;&#x5361;&#x51FA;&#x73B0;&#xFF0C;&#x5C06;&#x8BE5;&#x7F51;&#x5361;&#x7684;ip&#x8BBE;&#x4E3A;192.168.56.x&#xFF0C; &#x7F51;&#x5173;&#x8BBE;&#x4E3A;192.168.56.1,&#x8BE5;&#x7F51;&#x5361;&#x7684;&#x7528;&#x9014;&#x5C31;&#x662F;&#x7528;&#x6765;&#x8DDF;&#x7269;&#x7406;&#x673A;&#x5668;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x3002;</p>
-<p>&#x7ECF;&#x8FC7;&#x4E00;&#x756A;&#x8BBE;&#x7F6E;&#x4E4B;&#x540E;&#xFF0C;&#x865A;&#x62DF;&#x673A;&#x5E94;&#x8BE5;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;IP&#x88AB;&#x7269;&#x7406;&#x673A;&#x5668;&#x8BBF;&#x95EE;&#x4E86;&#xFF0C;&#x5E76;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;&#x3002;&#x6CE8;&#x610F;&#x5728;&#x8FD9;&#x79CD;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#x4E0B;&#xFF0C;&#x5982;&#x679C;&#x7269;&#x7406;&#x4E3B;&#x673A;&#x662F;&#x5728;&#x4E00;&#x4E2A;&#x5C40;&#x57DF;&#x7F51;&#x5185;&#xFF0C;&#x90A3;&#x4E48;&#x5C40;&#x57DF;&#x7F51;&#x5176;&#x4ED6;&#x7684;&#x4E3B;&#x673A;&#x662F;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;ip&#x8BBF;&#x95EE;&#x5230;&#x7684;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x5C40;&#x57DF;&#x7F51;&#x5185;&#x5176;&#x4ED6;&#x4E3B;&#x673A;&#x8BBF;&#x95EE;&#x8BE5;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5C06;&#x8BE5;&#x865A;&#x62DF;&#x673A;&#x7684;&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#x7531;host only &#x6539;&#x4E3A;Bridged Adapter&#xFF0C;&#x5E76;&#x9009;&#x62E9;&#x7269;&#x7406;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x5B9E;&#x9645;&#x7269;&#x7406;&#x7684;&#x7F51;&#x7EDC;&#x63A5;&#x53E3;&#x4F5C;&#x4E3A;&#x63A5;&#x5165;&#x63A5;&#x53E3;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x7F51;&#x7EDC;&#x662F;&#x901A;&#x8FC7;DHCP&#x83B7;&#x5F97;Ip&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x865A;&#x62DF;&#x673A;&#x5C31;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x548C;&#x7269;&#x7406;&#x673A;&#x5668;&#x540C;&#x7B49;&#x5730;&#x4F4D;&#x7684;IP&#x5730;&#x5740;&#xFF0C;&#x5C31;&#x597D;&#x50CF;&#x4E00;&#x53F0;&#x65B0;&#x7684;&#x7269;&#x7406;&#x673A;&#x5668;&#x63A5;&#x5165;&#x8BE5;&#x5C40;&#x57DF;&#x7F51;&#x5185;&#x4E00;&#x6837;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;DHCP&#xFF0C;&#x90A3;&#x4E48;&#x624B;&#x5DE5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x540C;&#x7269;&#x7406;&#x4E3B;&#x673A;&#x540C;&#x7B49;&#x7684;IP&#x5730;&#x5740;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x540C;&#x6837;&#x7684;&#x6548;&#x679C;&#x3002;</p>
-<p>&#x6765;&#x6E90;&#xFF1A; <a href="http://blog.csdn.net/xinghun_4/article/details/7969894" target="_blank" rel="external">http://blog.csdn.net/xinghun_4/article/details/7969894</a></p>
-
+<li>Virtualbox&#xFF1A;5.0.24</li></ul>
+          
       
     </div>
     
@@ -658,6 +426,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搭建环境/">搭建环境</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/09/05/virtualbox下网络配置/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -702,46 +474,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="vmware-tools&#x5B89;&#x88C5;"><a href="#vmware-tools&#x5B89;&#x88C5;" class="headerlink" title="vmware tools&#x5B89;&#x88C5;"></a>vmware tools&#x5B89;&#x88C5;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cp VMwareTools-9.6.5-2700074.tar.gz /opt</div><div class="line"><span class="built_in">cd</span> /opt</div><div class="line">tar -zxvf VMwareTools-9.6.5-2700074.tar.gz /opt</div><div class="line"><span class="built_in">cd</span> vmware-tools-distrib</div><div class="line">./vmware-install.pl</div></pre></td></tr></table></figure>
-<h3 id="C-&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;"><a href="#C-&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;" class="headerlink" title="C++&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;"></a>C++&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h3><ol>
-<li><p>&#x5148;&#x770B;&#x4E00;&#x4E0B;g++&#x88C5;&#x4E86;&#x5426;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">g++ --version</div></pre></td></tr></table></figure>
-</li>
-<li><p>&#x56E0;&#x4E3A;&#x8981;&#x4F7F;&#x7528;scons&#x6784;&#x5EFA;&#x5DE5;&#x5177;&#xFF0C;&#x4F1A;&#x7528;&#x5230;python, &#x770B;&#x4E00;&#x4E0B;&#x5B89;&#x88C5;python&#x5426;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python --version</div></pre></td></tr></table></figure>
-</li>
-<li><p>&#x5B89;&#x88C5;scons</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cp scons-2.5.0.tar.gz /opt</div><div class="line"><span class="built_in">cd</span> /opt</div><div class="line">tar -zxvf scons-2.5.0.tar.gz</div><div class="line"><span class="built_in">cd</span> scons-2.5.0/</div><div class="line">./setup.py</div></pre></td></tr></table></figure>
-</li>
-<li><p>&#x5B89;&#x88C5;Sublime Text 2</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /opt</div><div class="line">tar -jxvf Sublime\ Test\ 2.0.2.tar.bz2</div><div class="line"><span class="built_in">cd</span> Sublime\ Text\ 2</div><div class="line">./sublime_text            //&#x542F;&#x52A8;</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h3 id="Java&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;"><a href="#Java&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;" class="headerlink" title="Java&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;"></a>Java&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h3><ol>
-<li><p>&#x5148;&#x770B;&#x4E00;&#x4E0B;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x4E86;java</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java --version</div></pre></td></tr></table></figure>
-</li>
-<li><p>&#x5B89;&#x88C5;jdk</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /opt</div><div class="line">sudo tar -zxvf jdk***.tar.gz</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>// &#x5BF9;profile&#x8FDB;&#x884C;&#x914D;&#x7F6E;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /etc/profile</div></pre></td></tr></table></figure></p>
-<p>1&#xFF09;&#x6DFB;&#x52A0;JAVA_HOME&#x8DEF;&#x5F84;&#xFF1A;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> JAVA_HOME=/opt/jdk1.8.0_91</div></pre></td></tr></table></figure></p>
-<p>2)&#x6DFB;&#x52A0;JRE&#x8DEF;&#x5F84;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> JRE_HOME=<span class="variable">$JAVA_HOME</span>/jre</div></pre></td></tr></table></figure></p>
-<p>3)&#x914D;&#x7F6E;CLASSPATH&#x8DEF;&#x5F84;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/lib:<span class="variable">$JRE_HOME</span>/lib</div></pre></td></tr></table></figure></p>
-<p>4&#xFF09;&#x914D;&#x7F6E;PATH&#x8DEF;&#x5F84;<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$JRE_HOME</span>/bin</div></pre></td></tr></table></figure></p>
-<pre><code>&#x8BA9;&#x521A;&#x624D;&#x7684;&#x914D;&#x7F6E;&#x751F;&#x6548;
-</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">source</span> /etc/profile</div></pre></td></tr></table></figure>
-<pre><code>&#x9A8C;&#x8BC1;&#xFF1A;
-</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java -version</div></pre></td></tr></table></figure>
-<ol>
-<li><p>&#x5B89;&#x88C5;eclipse for java ee</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo tar -zxvf eclipse-jee****.tar.gz</div><div class="line">        ./eclipse</div></pre></td></tr></table></figure>
-</li>
-<li><p>&#x5B89;&#x88C5;eclipse for c++</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo tar -zxvf eclipse-cpp***.tar.gz</div><div class="line">    ./eclipse</div></pre></td></tr></table></figure></li>
-</ol>
-
+              <h3 id="vmware-tools&#x5B89;&#x88C5;"><a href="#vmware-tools&#x5B89;&#x88C5;" class="headerlink" title="vmware tools&#x5B89;&#x88C5;"></a>vmware tools&#x5B89;&#x88C5;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">cp VMwareTools-9.6.5-2700074.tar.gz /opt</div><div class="line"><span class="built_in">cd</span> /opt</div><div class="line">tar -zxvf VMwareTools-9.6.5-2700074.tar.gz /opt</div><div class="line"><span class="built_in">cd</span> vmware-tools-distrib</div><div class="line">./vmware-install.pl</div></pre></td></tr></table></figure>
+          
       
     </div>
     
@@ -754,6 +488,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搭建环境/">搭建环境</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/09/05/Ubuntu下搭建开发环境（二）/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -798,23 +536,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="&#x4E0B;&#x8F7D;&#x5E76;&#x5728;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x5B89;&#x88C5;&#x957F;&#x671F;&#x652F;&#x6301;&#x7248;&#x7684;ubuntu&#xFF08;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;16-04&#xFF09;"><a href="#&#x4E0B;&#x8F7D;&#x5E76;&#x5728;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x5B89;&#x88C5;&#x957F;&#x671F;&#x652F;&#x6301;&#x7248;&#x7684;ubuntu&#xFF08;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;16-04&#xFF09;" class="headerlink" title="&#x4E0B;&#x8F7D;&#x5E76;&#x5728;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x5B89;&#x88C5;&#x957F;&#x671F;&#x652F;&#x6301;&#x7248;&#x7684;ubuntu&#xFF08;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;16.04&#xFF09;"></a>&#x4E0B;&#x8F7D;&#x5E76;&#x5728;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x5B89;&#x88C5;&#x957F;&#x671F;&#x652F;&#x6301;&#x7248;&#x7684;ubuntu&#xFF08;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;16.04&#xFF09;</h2><h3 id="&#x5B89;&#x88C5;ssh&#x670D;&#x52A1;"><a href="#&#x5B89;&#x88C5;ssh&#x670D;&#x52A1;" class="headerlink" title="&#x5B89;&#x88C5;ssh&#x670D;&#x52A1;"></a>&#x5B89;&#x88C5;ssh&#x670D;&#x52A1;</h3><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x5148;ubuntu&#x4F1A;&#x5B89;&#x88C5;ssh-client&#xFF0C; &#x4F46;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x5B89;&#x88C5;ssh-server<br>&#x6B65;&#x9AA4;&#xFF1A;</p>
+              <h2 id="&#x4E0B;&#x8F7D;&#x5E76;&#x5728;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x5B89;&#x88C5;&#x957F;&#x671F;&#x652F;&#x6301;&#x7248;&#x7684;ubuntu&#xFF08;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;16-04&#xFF09;"><a href="#&#x4E0B;&#x8F7D;&#x5E76;&#x5728;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x5B89;&#x88C5;&#x957F;&#x671F;&#x652F;&#x6301;&#x7248;&#x7684;ubuntu&#xFF08;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;16-04&#xFF09;" class="headerlink" title="&#x4E0B;&#x8F7D;&#x5E76;&#x5728;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x5B89;&#x88C5;&#x957F;&#x671F;&#x652F;&#x6301;&#x7248;&#x7684;ubuntu&#xFF08;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;16.04&#xFF09;"></a>&#x4E0B;&#x8F7D;&#x5E76;&#x5728;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x5B89;&#x88C5;&#x957F;&#x671F;&#x652F;&#x6301;&#x7248;&#x7684;ubuntu&#xFF08;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;16.04&#xFF09;</h2><h3 id="&#x5B89;&#x88C5;ssh&#x670D;&#x52A1;"><a href="#&#x5B89;&#x88C5;ssh&#x670D;&#x52A1;" class="headerlink" title="&#x5B89;&#x88C5;ssh&#x670D;&#x52A1;"></a>&#x5B89;&#x88C5;ssh&#x670D;&#x52A1;</h3><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x5148;ubuntu&#x4F1A;&#x5B89;&#x88C5;ssh-client&#xFF0C; &#x4F46;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x5B89;&#x88C5;ssh-server<br>&#x6B65;&#x9AA4;&#xFF1A;</p>
 <ol>
-<li><p>&#x770B;&#x4E0B;&#x662F;&#x4E0D;&#x662F;&#x5B89;&#x88C5;&#x4E86;ssh<br>whereis ssh    &#x770B;&#x662F;&#x4E0D;&#x662F;&#x5B89;&#x88C5;&#x4E86;&#x5BA2;&#x6237;&#x7AEF;<br>whereis sshd   &#x770B;&#x662F;&#x4E0D;&#x662F;&#x5B89;&#x88C5;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x7AEF;</p>
-</li>
-<li><p>&#x770B;&#x670D;&#x52A1;&#x6709;&#x6CA1;&#x6709;&#x8D77;&#x6765;<br>ps -e | grep ssh<br>1698 ?  00:00:00 ssh-agent<br>4473 ?  00:00:00 sshd<br>&#x5982;&#x679C;&#x53EA;&#x6709;ssh-agent&#x8BF4;&#x660E;ssh-server&#x8FD8;&#x6CA1;&#x6709;&#x542F;&#x52A8;&#xFF0C;&#x9700;&#x8981;/etc/init.d/ssh start&#xFF1B;<br>&#x5982;&#x679C;&#x770B;&#x5230;sshd&#x90A3;&#x8BF4;&#x660E;ssh-server&#x5DF2;&#x7ECF;&#x542F;&#x52A8;&#x4E86;&#x3002;<br>&#x542F;&#x52A8;ssh&#x670D;&#x52A1;&#x7528; service ssh start/restart</p>
-</li>
-<li><p>&#x914D;&#x7F6E;<br>ssh-server&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F4D;&#x4E8E;/ etc/ssh/sshd_config,&#x5141;&#x8BB8;&#x5BC6;&#x7801;&#x767B;&#x5F55;<br>PermitRootLogin prohibit-password<br>PermitRootLogin yes<br>&#x7136;&#x540E;&#x91CD;&#x542F;SSH&#x670D;&#x52A1;&#xFF1A; sudo/etc/init.d/ssh restart</p>
-</li>
-</ol>
-<h3 id="windows&#x4E0B;&#x5B89;&#x88C5;ssh&#x5BA2;&#x6237;&#x7AEF;Xshell"><a href="#windows&#x4E0B;&#x5B89;&#x88C5;ssh&#x5BA2;&#x6237;&#x7AEF;Xshell" class="headerlink" title="windows&#x4E0B;&#x5B89;&#x88C5;ssh&#x5BA2;&#x6237;&#x7AEF;Xshell"></a>windows&#x4E0B;&#x5B89;&#x88C5;ssh&#x5BA2;&#x6237;&#x7AEF;Xshell</h3><ol>
-<li>&#x89E3;&#x51B3;delete&#x4E71;&#x7801;&#x95EE;&#x9898;<br>&#x6587;&#x4EF6;-&#x5C5E;&#x6027;<br><img src="/2016/09/05/Ubuntux&#x4E0B;&#x642D;&#x5EFA;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#xFF08;&#x4E00;&#xFF09;/&#x5C5E;&#x6027;.png" alt="&#x5C5E;&#x6027;&#x56FE;&#x7247;"></li>
-</ol>
-<h3 id="&#x4F7F;&#x7528;vsftp&#x670D;&#x52A1;"><a href="#&#x4F7F;&#x7528;vsftp&#x670D;&#x52A1;" class="headerlink" title="&#x4F7F;&#x7528;vsftp&#x670D;&#x52A1;"></a>&#x4F7F;&#x7528;vsftp&#x670D;&#x52A1;</h3><p><a href="http://jingyan.baidu.com/article/67508eb4d6c4fd9ccb1ce470.html" target="_blank" rel="external">vstp&#x670D;&#x52A1;&#x642D;&#x5EFA;&#x53C2;&#x8003;</a></p>
-<h3 id="&#x914D;&#x7F6E;&#x4F7F;&#x7528;samba&#x670D;&#x52A1;&#x5668;"><a href="#&#x914D;&#x7F6E;&#x4F7F;&#x7528;samba&#x670D;&#x52A1;&#x5668;" class="headerlink" title="&#x914D;&#x7F6E;&#x4F7F;&#x7528;samba&#x670D;&#x52A1;&#x5668;"></a>&#x914D;&#x7F6E;&#x4F7F;&#x7528;samba&#x670D;&#x52A1;&#x5668;</h3><p><a href="http://jingyan.baidu.com/article/00a07f38b9194082d028dc08.html" target="_blank" rel="external">samba&#x670D;&#x52A1;&#x642D;&#x5EFA;&#x53C2;&#x8003;</a></p>
-<h4 id="&#x5C06;linux&#x5171;&#x4EAB;&#x76EE;&#x5F55;&#x6620;&#x5C04;&#x5230;windows&#x7684;&#x7F51;&#x7EDC;&#x9A71;&#x52A8;&#x5668;"><a href="#&#x5C06;linux&#x5171;&#x4EAB;&#x76EE;&#x5F55;&#x6620;&#x5C04;&#x5230;windows&#x7684;&#x7F51;&#x7EDC;&#x9A71;&#x52A8;&#x5668;" class="headerlink" title="&#x5C06;linux&#x5171;&#x4EAB;&#x76EE;&#x5F55;&#x6620;&#x5C04;&#x5230;windows&#x7684;&#x7F51;&#x7EDC;&#x9A71;&#x52A8;&#x5668;"></a>&#x5C06;linux&#x5171;&#x4EAB;&#x76EE;&#x5F55;&#x6620;&#x5C04;&#x5230;windows&#x7684;&#x7F51;&#x7EDC;&#x9A71;&#x52A8;&#x5668;</h4><pre><code>&#x8FD0;&#x884C;--\\192.168.145.132--&#x53F3;&#x952E;&#x6620;&#x5C04;&#x7F51;&#x7EDC;&#x9A71;&#x52A8;&#x5668;
-</code></pre><h3 id="&#x6302;&#x8F7D;windows&#x4E0B;&#x5171;&#x4EAB;&#x76EE;&#x5F55;&#x5230;linux&#x4E0B;"><a href="#&#x6302;&#x8F7D;windows&#x4E0B;&#x5171;&#x4EAB;&#x76EE;&#x5F55;&#x5230;linux&#x4E0B;" class="headerlink" title="&#x6302;&#x8F7D;windows&#x4E0B;&#x5171;&#x4EAB;&#x76EE;&#x5F55;&#x5230;linux&#x4E0B;"></a>&#x6302;&#x8F7D;windows&#x4E0B;&#x5171;&#x4EAB;&#x76EE;&#x5F55;&#x5230;linux&#x4E0B;</h3><pre><code>sudo apt install cifs-units
-</code></pre>
+<li>&#x770B;&#x4E0B;&#x662F;&#x4E0D;&#x662F;&#x5B89;&#x88C5;&#x4E86;ssh<br>whereis ssh    &#x770B;&#x662F;&#x4E0D;&#x662F;&#x5B89;&#x88C5;&#x4E86;&#x5BA2;&#x6237;&#x7AEF;<br>whereis sshd   &#x770B;&#x662F;&#x4E0D;&#x662F;&#x5B89;&#x88C5;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x7AEF;</li></ol>
+          
       
     </div>
     
@@ -827,6 +552,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搭建环境/">搭建环境</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/09/05/Ubuntux下搭建开发环境（一）/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -871,7 +600,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h3 id="&#x73AF;&#x5883;&#x914D;&#x7F6E;"><a href="#&#x73AF;&#x5883;&#x914D;&#x7F6E;" class="headerlink" title="&#x73AF;&#x5883;&#x914D;&#x7F6E;"></a>&#x73AF;&#x5883;&#x914D;&#x7F6E;</h3><ol>
+              <h3 id="&#x73AF;&#x5883;&#x914D;&#x7F6E;"><a href="#&#x73AF;&#x5883;&#x914D;&#x7F6E;" class="headerlink" title="&#x73AF;&#x5883;&#x914D;&#x7F6E;"></a>&#x73AF;&#x5883;&#x914D;&#x7F6E;</h3><ol>
 <li><p>&#x9996;&#x5148;&#x4FEE;&#x6539;_config.yml&#x4E2D;&#x7684;post_asset_golder&#x5C5E;&#x6027;&#x3002;</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">post_asset_floder: <span class="literal">true</span></div></pre></td></tr></table></figure>
 </li>
@@ -879,16 +608,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="&#x4F7F;&#x7528;&#x672C;&#x5730;&#x56FE;&#x7247;"><a href="#&#x4F7F;&#x7528;&#x672C;&#x5730;&#x56FE;&#x7247;" class="headerlink" title="&#x4F7F;&#x7528;&#x672C;&#x5730;&#x56FE;&#x7247;"></a>&#x4F7F;&#x7528;&#x672C;&#x5730;&#x56FE;&#x7247;</h3><ol>
-<li>&#x5728;source&#x4E0B;&#x6DFB;&#x52A0;&#x5B58;&#x653E;&#x56FE;&#x7247;&#x7684;&#x76EE;&#x5F55;asset</li>
-<li><p>&#x4F7F;&#x7528;&#x65F6;&#x53EA;&#x7528;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x6DFB;&#x52A0;&#xFF1A;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![&#x56FE;&#x7247;1](../../../../p1.jpg)</div></pre></td></tr></table></figure>
-</li>
-<li><p>&#x770B;&#x4E00;&#x4E0B;&#x76EE;&#x5F55;&#x7ED3;&#x6784;<br><img src="/2016/09/04/hexo&#x535A;&#x5BA2;&#x4F7F;&#x7528;&#x672C;&#x5730;&#x56FE;&#x7247;/../../../../asset/&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x56FE;.png" alt="&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x56FE;"><br>&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x5728;markdown&#x7F16;&#x8F91;&#x7684;&#x9884;&#x89C8;&#x4E2D;&#x770B;&#x4E0D;&#x5230;&#x56FE;&#x7247;&#xFF0C;&#x4E3A;&#x4E86;&#x770B;&#x5230;&#x56FE;&#x7247;&#x5728;&#x7F16;&#x8F91;&#x65F6;&#x53EF;&#x4EE5;&#x5199;&#x4E3A;</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![&#x56FE;&#x7247;1](../p1.jpg)</div></pre></td></tr></table></figure>
-</li>
-</ol>
-
+          
       
     </div>
     
@@ -901,6 +621,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/搭建环境/">搭建环境</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/09/04/hexo博客使用本地图片/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -949,10 +673,7 @@
 <li>&#x5B89;&#x88C5;git&#x6216;&#x8005;github(&#x5FC5;&#x9700;)</li>
 <li>&#x5B89;&#x88C5;TortoiseGit&#x548C;&#x76F8;&#x5E94;&#x7684;&#x8BED;&#x8A00;&#x5305;</li>
 <li>&#x5B89;&#x88C5;node.js(&#x5FC5;&#x9700;)v6.2.0</li>
-<li>&#x5B89;&#x88C5;markdown&#x7F16;&#x8F91;&#x5668;Haroopad</li>
-</ol>
-<h3 id="&#x5B89;&#x88C5;hexo"><a href="#&#x5B89;&#x88C5;hexo" class="headerlink" title="&#x5B89;&#x88C5;hexo"></a>&#x5B89;&#x88C5;hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
-<h3 id="&#x521D;&#x59CB;&#x5316;blog&#x76EE;&#x5F55;"><a href="#&#x521D;&#x59CB;&#x5316;blog&#x76EE;&#x5F55;" class="headerlink" title="&#x521D;&#x59CB;&#x5316;blog&#x76EE;&#x5F55;"></a>&#x521D;&#x59CB;&#x5316;blog&#x76EE;&#x5F55;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init blog</div></pre></td></tr></table></figure>
+<li>&#x5B89;&#x88C5;markdown&#x7F16;&#x8F91;&#x5668;Haroopad</li></ol>
           
       
     </div>
@@ -968,7 +689,7 @@
 
       
         <p class="article-more-link">
-          <a  href="/2016/09/04/安装配置hexo/#more">大航海 >></a>
+          <a  href="/2016/09/04/安装配置hexo/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -1065,7 +786,7 @@
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >海贼到访数: 
+                        <span id="site-visit" >到访数: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
